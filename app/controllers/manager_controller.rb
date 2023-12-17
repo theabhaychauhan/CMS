@@ -19,7 +19,6 @@ class ManagerController < ApplicationController
   private
 
   def authenticate_manager
-    byebug
     unless current_user&.manager?
       render json: { error: 'Unauthorized' }, status: :unauthorized
     end

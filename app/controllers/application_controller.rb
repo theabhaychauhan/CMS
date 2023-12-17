@@ -10,7 +10,6 @@ class ApplicationController < ActionController::API
     header = request.headers['Authorization']
     header = header.split(' ').last if header
     begin
-      byebug
       @decoded = JsonWebToken.decode(header)
       @current_user = User.find_by(email: @decoded[:user_email])
     rescue ActiveRecord::RecordNotFound => e

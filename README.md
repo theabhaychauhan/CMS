@@ -7,6 +7,13 @@
 <code>
 curl --location --request POST 'http://127.0.0.1:3000/signup?name=Abhay%20Chauhan&amp;username=theabhaychauhan&amp;email=ch.abhay%40yahoo.com&amp;password=PASSWORD'
 </code>
+<code>
+  curl --location --request POST 'https://sleepy-coast-67323-5232bee430f0.herokuapp.com/signup' \
+--data-urlencode 'name=Abhay Chauhan' \
+--data-urlencode 'username=theabhaychauhan' \
+--data-urlencode 'email=ch.abhay@yahoo.com' \
+--data-urlencode 'password=YourPasswordHere'
+</code>
 </pre>
 
 <h2>Login</h2>
